@@ -300,6 +300,24 @@ EL ADD Y EL KICK PUEDEN OCASIONAR QUE EL NUMERO SE VAYA A SOPORTE POR ELLO SE AC
 ╠⚔️⋟᷊᷂᷊᷊᷊᷊᷊᷊᷊᷊᷊᷊᷂᷂᷂᷂᷂᷂᷂᷂᷂᷂᷂᷂᷊᷊᷂᷂᷂᷂⭐ _${usedPrefix}on *:* off *soloprivados | pconly*_
 ╠⚔️⋟᷊᷂᷊᷊᷊᷊᷊᷊᷊᷊᷊᷊᷂᷂᷂᷂᷂᷂᷂᷂᷂᷂᷂᷂᷊᷊᷂᷂᷂᷂⭐ _${usedPrefix}on *:* off *sologrupos | gconly*_
 *╘━ꥇ۬⊱⊶⊷⊶⊷⊶⊷⊶⊷⇲⊰⌏*
+*╔─━━━━━━░★░━━━━━━─╗*
+┣⚔️➺ _${usedPrefix}Fem4_
+┣⚔️➺ _${usedPrefix}Fem6_
+┣⚔️➺ _${usedPrefix}FemInterna4_
+┣⚔️➺ _${usedPrefix}FemInterna6_
+┣⚔️➺ _${usedPrefix}Masc4_
+┣⚔️➺ _${usedPrefix}MascInterna6_
+┣⚔️➺ _${usedPrefix}Mixto4_
+┣⚔️➺ _${usedPrefix}Mixto6_
+┣⚔️➺ _${usedPrefix}MixtoInterna4_
+┣⚔️➺ _${usedPrefix}MixtoInterna6_
+┣⚔️➺ _${usedPrefix}Ficha / Formulario Pa Entrar A Team_
+┣⚔️➺ _${usedPrefix}Vs4_
+┣⚔️➺ _${usedPrefix}Vs6_
+┣⚔️➺ _${usedPrefix}Vs8_
+┣⚔️➺ _${usedPrefix}Vs12_
+┣⚔️➺ _${usedPrefix}Vs20_
+* ╚─━━━━━━░★░━━━━━━─╝ *
 
 
 ╔─━━━━━━░★░━━━━━━─╗
