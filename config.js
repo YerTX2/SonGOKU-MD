@@ -11,15 +11,15 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 
 // [ Agrega el número que será Bot y los que serán propietarios. ]
 global.owner = [
-["50250101139", 'Wilmer ofc', true],
-["50258115623"], 
-["51967997782"]
+["51907376960", 'ZxYerSixZx', true],
+["51907376960"], 
+["51907376960"]
 ]
 
 global.mods = []
 global.prems = []
 
-global.tagusario = ['50250101139'];
+global.tagusario = ['51907376960'];
 
 global.obtenerQrWeb = 0; //1 o 0
 global.keepAliveRender = 0; // 1 o 0
@@ -94,27 +94,27 @@ global.moment = moment
 //------------------------------------------------
 
 global.official = [
-["50250101139", 'Wilmer ofc', 1], 
-["50258115623", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],  
-["51996416792", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],
-["50250101139", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿𝗮 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],
-["50258115623", 'Soporte', 1]]
+["51907376960", 'ZxYerSixZx', 1], 
+["51907376960", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],  
+["51907376960", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],
+["51907376960", '𝗗𝗲𝘀𝗮𝗿𝗿𝗼𝗹𝗹𝗮𝗱𝗼𝗿𝗮 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],
+["51907376960", 'Soporte', 1]]
 
 global.mail = '' // Add email
 global.desc = '' // Add short description (20 caractres max)
 global.desc2 = '' // Add long description (90 caractres max) (Este parámetro se aplicará sólo si su whasapp no tiene descripción)
-global.country = '' // Add country, example: 🇪🇨
+global.country = '' // Add country, example: 🇵🇪
 //------------------------------------------------
-global.fantasy = "𝐍𝐚𝐭𝐬𝐮𝐤𝐢𝐁𝐨𝐭 ᵖᵒʷᵒʳᵉᵈ ᵇʸ\n𝔚𝔦𝔩𝔪𝔢𝔯 𝖔𝖋𝖎𝖈𝖎𝖆𝖑" // new name
-global.wilmerofc = "𝐍𝐚𝐭𝐬𝐮𝐤𝐢𝐁𝐨𝐭 ☃️" // fkontak2
-global.packname = `├┈‧͙⁺˚･༓☾ 𝚆𝙸𝙻𝙼𝙴𝚁 𝙾𝙵𝙲 ☽༓･˚⁺‧͙\n├┈ ⟴ 𝚈𝚘𝚞𝚃𝚞𝚋𝚎:\n├┈ @wilmer.oficial\n├┈ ⟴ 𝙸𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖:\n├┈ @cmwilmer4\n╰⊱⊶⊷⊶⊷⊶⊷⊶⊷⇲⊰⌏`
-global.author =  ` ├┈‧͙･༓☾ 𝚆𝙸𝙻𝙼𝙴𝚁 𝙾𝙵𝙲 ☽༓･˚\n├┈⟴ 𝙶𝚒𝚝𝙷𝚞𝚋:\n├┈ Wilsmac\n├┈ ⟴ 𝙿𝚊𝚢𝙿𝚊𝚕:\n├┈ @wilmermacu1\n╰⊱⊶⊷⊶⊷⊶⊷⊶⊷⇲⊰⌏`
+global.fantasy = "SonGoku Zt ᵇʸ\nZxYerSixZx " // new name
+global.wilmerofc = "SonGoku 🐲" // fkontak2
+global.packname = `├┈‧͙⁺˚･༓☾ ZxYerSixZx ☽༓･˚⁺‧͙\n├┈ ⟴ 𝚈𝚘𝚞𝚃𝚞𝚋𝚎:\n├┈ ZxYerSixZx.oficial\n├┈ ⟴ 𝙸𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖:\n├┈ @yer29_07\n╰⊱⊶⊷⊶⊷⊶⊷⊶⊷⇲⊰⌏`
+global.author =  ` ├┈‧͙･༓☾ ZxYerSixZx ☽༓･˚\n├┈⟴ 𝙶𝚒𝚝𝙷𝚞𝚋:\n├┈ YerTX2\n├┈ ⟴ 𝙿𝚊𝚢𝙿𝚊𝚕:\n├┈ @YerSix\n╰⊱⊶⊷⊶⊷⊶⊷⊶⊷⇲⊰⌏`
 
 //----------------------------------------------------------
 
 
-global.estilo2 = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: fantasy, orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
-global.textia = `ᴘᴏᴡʀᴇᴅ ʙʏ ᴡɪʟᴍᴇʀ`
+global.estilo2 = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "51907376960-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: fantasy, orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
+global.textia = `ZxYerSixZx`
 
 
 //-------------------------------------------------------------
@@ -137,37 +137,38 @@ global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', s
 
 global.vs = "1.8.0"
 global.vsJB = "3.0"
-global.gt = "𝐍𝐚𝐭𝐬𝐮𝐤𝐢𝐁𝐨𝐭 ☃️"
+global.gt = "SonGoku"
 
-global.canalofc = "https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43"
-global.yt = "https://youtube.com/@wilmer.oficial"
+global.canalofc = "https://whatsapp.com/channel/0029Vaj67qQJUM2Wa5Ey3y1v"
+global.yt = "https://youtube.com/@akirayt6080"
 global.yt2 = "https://www.youtube.com/watch?v=Ko019wvu2Tc&t=71s"
-global.ig = "https://www.instagram.com/cmwilmer4"
-global.md = "https://github.com/Wilsmac"
+global.ig = "https://www.instagram.com/yer29_07"
+global.md = "https://github.com/YerTX2"
 global.fb = "https://www.facebook.com/groups/1039865800178898/?ref=share"
-global.tk = "https://www.tiktok.com/@wilsmac4"
-global.ths = "https://www.threads.net/@cmwilmer4"
+global.tk = "https://www.tiktok.com/@yer7528"
+global.ths = "https://www.threads.net/ZxYerSixZx"
 global.paypal = 'https://paypal.me/'
 global.asistencia = 'https://wa.me/message/C45GXBEFTPONE1' //Contacto
-global.bot = 'wa.me/50250101139'
+global.bot = 'wa.me/51907376960'
 
-global.nna = 'https://www.atom.bio/Wilsmac/' // Cuentas
+global.nna = 'https://atom.bio/zxyersixzx_/' // Cuentas
 global.nn2 = 'https://t.me/' // 
-global.nna2 = 'https://chat.whatsapp.com/EAxOACyzjB6JhkRvQvw4zl' //Anime y social 
-global.nn = 'https://chat.whatsapp.com/CPASQk25rExCIEdlkrOfBz' // FantasyBot-MD 
-global.nnn = 'https://chat.whatsapp.com/CPASQk25rExCIEdlkrOfBz' // FantasyBot-MD 
-global.nnnt = 'https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43' // canal 
-global.nnntt = 'https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43' // canal 
-global.nnnttt = 'https://chat.whatsapp.com/CPASQk25rExCIEdlkrOfBz' // FantasyBot-MD 
-global.nnnttt1 = 'https://chat.whatsapp.com/EAxOACyzjB6JhkRvQvw4zl' // Anime y social 
-global.nnnttt2 = 'https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43' // canal
-global.nnnttt3 = 'https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43' // canal
-global.nnnttt4 = 'https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43' // canal 
-global.nnnttt5 = 'https://chat.whatsapp.com/EAxOACyzjB6JhkRvQvw4zl' // anime y social 
-global.nnnttt6 = 'https://chat.whatsapp.com/CPASQk25rExCIEdlkrOfBz' // FantasyBot-MD 
-global.channel1 = 'https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43'
-global.channel2 = 'https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43'
+global.nna2 = 'https://whatsapp.com/channel/0029Vaj67qQJUM2Wa5Ey3y1v' //Anime y social 
+global.nn = 'https://whatsapp.com/channel/0029Vaj67qQJUM2Wa5Ey3y1v' // FantasyBot-MD 
+global.nnn = 'https://whatsapp.com/channel/0029Vaj67qQJUM2Wa5Ey3y1v' // FantasyBot-MD 
+global.nnnt = 'https://whatsapp.com/channel/0029Vaj67qQJUM2Wa5Ey3y1v' // canal 
+global.nnntt = 'https://whatsapp.com/channel/0029Vaj67qQJUM2Wa5Ey3y1v' // canal 
+global.nnnttt = 'https://whatsapp.com/channel/0029Vaj67qQJUM2Wa5Ey3y1v' // FantasyBot-MD 
+global.nnnttt1 = 'https://whatsapp.com/channel/0029Vaj67qQJUM2Wa5Ey3y1v' // Anime y social 
+global.nnnttt2 = 'https://whatsapp.com/channel/0029Vaj67qQJUM2Wa5Ey3y1v' // canal
+global.nnnttt3 = 'https://whatsapp.com/channel/0029Vaj67qQJUM2Wa5Ey3y1v' // canal
+global.nnnttt4 = 'https://whatsapp.com/channel/0029Vaj67qQJUM2Wa5Ey3y1v' // canal 
+global.nnnttt5 = 'https://whatsapp.com/channel/0029Vaj67qQJUM2Wa5Ey3y1v' // anime y social 
+global.nnnttt6 = 'https://whatsapp.com/channel/0029Vaj67qQJUM2Wa5Ey3y1v' // FantasyBot-MD 
+global.channel1 = 'https://whatsapp.com/channel/0029Vaj67qQJUM2Wa5Ey3y1v'
+global.channel2 = 'https://whatsapp.com/channel/0029Vaj67qQJUM2Wa5Ey3y1v'
 global.channel3 = 'https://t.me/'
+
 //------------------------------------------------
 
 
@@ -196,14 +197,14 @@ global.exito = eg
 
 //------------------------------------------------
 
-global.wm = "𝑾𝒊𝒍𝒎𝒆𝒓 𝒐𝒇𝒄"
-global.igfg = "𝐍𝐚𝐭𝐬𝐮𝐤𝐢𝐁𝐨𝐭 🌺"
+global.wm = "ZxYerSixZx"
+global.igfg = "𝔖𝔬𝔫𝔊𝔬𝔨𝔲-𝔐𝔇"
 global.wait = "⌛ *`Cargando...`*\n*✦✦⊹⊹⊹⊹⊹⊹⊹⊹✪* `[20%]`"
 global.waitt = "⏳ *`Cargando....`*\n*✦✦✦✦⊹⊹⊹⊹⊹⊹✪* `[40%]`"
 global.waittt = "⌛ *`Cargando...`*\n*✦✦✦✦✦✦⊹⊹⊹⊹✪* `[60%]`"
 global.waitttt = "⏳ *`Cargando....`*\n*✦✦✦✦✦✦✦✦⊹⊹✪* `[80%]`"
 global.waittttt = "⌛ *`Procesando...`*\n*✦✦✦✦✦✦✦✦✦✦✪* `[100%]`"
-global.nomorown = "50250101139"
+global.nomorown = "51907376960"
 global.pdoc = ["application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/vnd.ms-excel", "application/msword", "application/pdf", "text/rtf"]
 
 //-----------------------------------------------
