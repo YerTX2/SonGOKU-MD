@@ -47,7 +47,7 @@ export default handler*/
         'title': fantasy,
         'body': wm,
         'thumbnail': fs.readFileSync("./media/menus/Menu1.jpg"),
-        'sourceUrl': 'https://whatsapp.com/channel/0029VaCUlPX0LKZAlP10pC43'}},
+        'sourceUrl': 'https://whatsapp.com/channel/0029Vaj67qQJUM2Wa5Ey3y1v'}},
     'caption': texto,
     'footer': wm,
     'headerType': 6};
