@@ -1,32 +1,32 @@
 {
-"name": "NatsukiBot",
-"version": "1.8.0", 
+"name": "DiazBot",
+"version": "1.7.0", 
 "description": "Super Bot WhatsApp",
 "main": "index.js",
 "type": "module",
-
+    
 "directories": {
 "lib": "lib",
 "src": "src",
 "plugins": "plugins" },
-
+    
 "scripts": {
 "start": "node index.js",
 "qr": "node index.js qr",
 "code": "node index.js code",
 "test": "node test.js",
 "test2": "nodemon index.js" },
-
-"homepage": "https://github.com/Wilsmac/NatsukiBot",
+    
+"homepage": "https://github.com/diaz1975/Diaz-Bot",
 "author": {
-"name": "Wilsmac" },
-
+"name": "Diaz1975" },
+    
 "repository": {
 "type": "git",
-"url": "git+https://github.com/Wilsmac/NatsukiBot.git" },
+"url": "git+https://github.com/GataNina-Li/GataBot-MD.git" },
 
 "bugs": {
-"url": "https://github.com/Wilsmac/NatsukiBot/issues" },
+"url": "https://github.com/diaz1975/Diaz-Bot/issues" },
 "license": "GPL-3.0-or-later",
 "dependencies": {
 "@whiskeysockets/baileys": "npm:@whiskeysockets/baileys@6.7.2",
@@ -39,7 +39,6 @@
 "@shineiichijo/marika": "^2.0.6",
 "@vitalets/google-translate-api": "^8.0.0",
 "@xct007/frieren-scraper": "^0.0.2",
-"@NatsukiTeam/Scraper": "github:Wilsmac/NatsukiTeam-Scraper",
 "acrcloud": "^1.4.0",
 "api-dylux": "^1.5.6",
 "express": "^4.18.1",    
@@ -71,6 +70,7 @@
 "lowdb": "^3.0.0",
 "libphonenumber-js": "^1.10.55",
 "megajs": "^1.2.2",
+"module-gatadios": "^1.0.5",
 "md5": "^2.3.0",
 "moment-timezone": "^0.5.34",
 "mongoose": "^6.3.3",
@@ -91,7 +91,6 @@
 "spotifydl-x": "^0.3.5",
 "syntax-error": "^1.4.0",
 "terminal-image": "^2.0.0",
-"ruhend-scraper": "^7.0.4",
 "url-regex-safe": "^3.0.0",
 "javascript-obfuscator": "^4.0.0",
 "wa-sticker-formatter": "^4.3.2",
