@@ -1,91 +1,3 @@
-/*import fetch from 'node-fetch';
-import yts from 'yt-search';
-import ytdl from 'ytdl-core';
-import axios from 'axios';
-import {youtubedl, youtubedlv2} from '@bochilteam/scraper';
-const handler = async (m, {conn: natsuki, command, args, text, usedPrefix}) => {
-let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-if (!text) throw `> ⓘ 𝙴𝚂𝙲𝚁𝙸𝙱𝙰 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙾 𝚃𝙸𝚃𝚄𝙻𝙾 𝙳𝙴 𝙻𝙰 𝙲𝙰𝙽𝙲𝙸𝙾́𝙽 𝚀𝚄𝙴 𝚀𝚄𝙸𝙴𝚁𝙴 𝚀𝚄𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝚄𝙴, 𝙴𝙹𝙴𝙼𝙿𝙻𝙾: ${usedPrefix + command} \`Ari Abdul Babydoll\``
-try { 
-const yt_play = await search(args.join(' '))
-const texto1 = `
-*AQUI ESTA* @${m.sender.replace(/@.+/, '')}
-✨⃞⃝⃟➥ 𝑻𝑰𝑻𝑼𝑳𝑶
-   ${yt_play[0].title}
-─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🌻❈┉━━━━─
-✨⃞⃝⃟➥ 𝑷𝑼𝑩𝑳𝑰𝑪𝑨𝑫𝑶
-  ${yt_play[0].ago}
-─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🌻❈┉━━━━─
-✨⃞⃝⃟➥ 𝑫𝑼𝑹𝑨𝑪𝑰𝑶𝑵
-  ${secondString(yt_play[0].duration.seconds)}
-─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🌻❈┉━━━━─
-✨⃞⃝⃟➥ 𝑽𝑰𝑺𝑻𝑨𝑺
-  ${MilesNumber(yt_play[0].views)}
-─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🌻❈┉━━━━─
-✨⃞⃝⃟➥ 𝑼𝑹𝑳
-𖤍 ${yt_play[0].url}
-*✧══════•❁❀❁•══════✧*`.trim()
-
-await natsuki.sendButton(m.chat, wm, texto1, yt_play[0].thumbnail, [['𝙼 𝙴 𝙽 𝚄', '/menu']], null, null, m)
-
-let listSections = [];             
-listSections.push({
-title: ' 𝚂𝙴𝙻𝙴𝙲𝙲𝙸𝙾𝙽𝙴 𝚂𝚄 𝚃𝙸𝙿𝙾 𝙳𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰 (𝙉𝙖𝙩𝙨𝙪𝙠𝙞𝘽𝙤𝙩)',
-rows: [{ header: "𝙰 𝚄 𝙳 𝙸 𝙾 (Opcion 1)", title: "", id: `${usedPrefix}yta ${yt_play[0].url}`, description: `${yt_play[0].title}\n` }, { header: "𝙰 𝚄 𝙳 𝙸 𝙾 (Opcion 2)", title: "", id: `${usedPrefix}play.1 ${yt_play[0].url}`, description: `${yt_play[0].title}\n` },
-{ header: "𝙰 𝚄 𝙳 𝙸 𝙾  𝐃 𝐎 𝐂", title: "", id: `${usedPrefix}ytmp3doc ${yt_play[0].url}`, description: `${yt_play[0].title}\n` },
-{ header: "𝚅 𝙸 𝙳 𝙴 𝙾 (Opcion 1)", title: "", id: `${usedPrefix}ytv ${yt_play[0].url}`, description: `${yt_play[0].title}\n` },
-{ header: "𝚅 𝙸 𝙳 𝙴 𝙾 (Opcion 2)", title: "", id: `${usedPrefix}play.2 ${yt_play[0].url}`, description: `${yt_play[0].title}\n` },
-{header: "𝚅 𝙸 𝙳 𝙴 𝙾  𝐃 𝐎 𝐂", title: "", id: `${usedPrefix}ytmp4doc ${yt_play[0].url}`, description: `${yt_play[0].title}\n`}
-]});
-
-listSections.push({
-  text: `*𝙴𝙻𝙸𝙹𝙰 𝚀𝚄𝙴 𝚅𝙰 𝙰 𝙷𝙰𝙲𝙴𝚁 𝙲𝙾𝙽  ${text}*`,
-  footer: global.wm,
-  title: ` 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚂 `,
-  buttonText: `𝙴𝙻𝙸𝙹𝙰`,
-  sections
-}) 
-
-
-await natsuki.sendList(m.chat, `*𝚂𝙴𝙻𝙴𝙲𝙲𝙸𝙾𝙽𝙴 𝚂𝚄 𝚃𝙸𝙿𝙾 𝙳𝙴 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰, 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝙻𝙰 𝙱𝚄𝚂𝚀𝚄𝙴𝙳𝙰:  ${text}*`, `\n𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚂* `, `𝙴𝙻𝙴𝙹𝙸𝚁`, listSections, {quoted: fkontak});
-} catch (e) {
-await natsuki.reply(m.chat, `${lenguajeCD['smsMalError3']()}#report ${lenguajeCD['smsMensError2']()} ${usedPrefix + command}\n\n${wm}`, fkontak, m)
-console.log(`❗❗ ${lenguajeCD['smsMensError2']()} ${usedPrefix + command} ❗❗`)
-console.log(e)
-handler.limit = 0
-}}
-handler.command = ['play', 'play2', 'play3', 'play4']
-//handler.limit = 3
-//handler.register = true 
-export default handler;
-
-async function search(query, options = {}) {
-const search = await yts.search({query, hl: 'es', gl: 'ES', ...options});
-return search.videos;
-}
-
-function MilesNumber(number) {
-const exp = /(\d)(?=(\d{3})+(?!\d))/g;
-const rep = '$1.';
-const arr = number.toString().split('.');
-arr[0] = arr[0].replace(exp, rep);
-return arr[1] ? arr.join('.') : arr[0];
-}
-
-function secondString(seconds) {
-seconds = Number(seconds);
-const d = Math.floor(seconds / (3600 * 24));
-const h = Math.floor((seconds % (3600 * 24)) / 3600);
-const m = Math.floor((seconds % 3600) / 60);
-const s = Math.floor(seconds % 60);
-const dDisplay = d > 0 ? d + (d == 1 ? ' día, ' : ' días, ') : '';
-const hDisplay = h > 0 ? h + (h == 1 ? ' hora, ' : ' horas, ') : '';
-const mDisplay = m > 0 ? m + (m == 1 ? ' minuto, ' : ' minutos, ') : '';
-const sDisplay = s > 0 ? s + (s == 1 ? ' segundo' : ' segundos') : '';
-return dDisplay + hDisplay + mDisplay + sDisplay;
-}
-*/
-
 import fetch from "node-fetch"
 import yts from "yt-search"
 import ytdl from 'ytdl-core'
@@ -93,39 +5,43 @@ import axios from 'axios'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 let handler = async (m, { conn, command, args, text, usedPrefix }) => {
 let q, v, yt, dl_url, ttl, size, lolhuman, lolh, n, n2, n3, n4, cap, qu, currentQuality   
-if (!text) throw `${lenguajeGB['smsAvisoMG']()}${mid.smsMalused4}\n*${usedPrefix + command} Billie Eilish - Bellyache*`
+if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝙊 𝙏𝙄𝙏𝙐𝙇𝙊\n𝙀𝙅𝙀𝙈𝙋𝙇𝙊\n*${usedPrefix + command} Billie Eilish - Bellyache*\n\n𝙒𝙍𝙄𝙏𝙀 𝙏𝙃𝙀 𝙉𝘼𝙈𝙀 𝙊𝙍 𝙏𝙄𝙏𝙇𝙀\n𝙀𝙓𝘼𝙈𝙋𝙇𝙀\n*${usedPrefix + command} Billie Eilish - Bellyache*`
 try {
 const yt_play = await search(args.join(" "))
 let additionalText = ''
-if (command === 'play') { 
-additionalText = '𝐀𝐮𝐝𝐢𝐨 '
+if (command === 'play') {
+additionalText = '𝘼𝙐𝘿𝙄𝙊 🔊'
 } else if (command === 'play2') {
-additionalText = '𝐕𝐢𝐝𝐞𝐨 '}
-let captionvid = `
-✨⃞⃝⃟➥ 𝑻𝑰𝑻𝑼𝑳𝑶
-   ${yt_play[0].title}
-─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🌻❈┉━━━━─
-✨⃞⃝⃟➥ 𝑷𝑼𝑩𝑳𝑰𝑪𝑨𝑫𝑶
-  ${yt_play[0].ago}
-─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🌻❈┉━━━━─
-✨⃞⃝⃟➥ 𝑫𝑼𝑹𝑨𝑪𝑰𝑶𝑵
-  ${secondString(yt_play[0].duration.seconds)}
-─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🌻❈┉━━━━─
-✨⃞⃝⃟➥ 𝑽𝑰𝑺𝑻𝑨𝑺
-  ${MilesNumber(yt_play[0].views)}
-─━━━━┉❈⏤͟͟͞͞★꙲⃝͟🌻❈┉━━━━─
-✨⃞⃝⃟➥ 𝑼𝑹𝑳
-𖤍 ${yt_play[0].url}
-*✧══════•❁❀❁•══════✧*`  
+additionalText = '𝙑𝙄𝘿𝙀𝙊 🎥'}
+let captionvid = `〔 𝗗𝗶𝗮𝘇 𝗕𝗼𝘁🥷🏻 〕
+
+ও 𝙏𝙄𝙏𝙐𝙇𝙊 | 𝙏𝙄𝙏𝙇𝙀
+»  ${yt_play[0].title}
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+ও 𝙋𝙐𝘽𝙇𝙄𝘾𝘼𝘿𝙊 | 𝙋𝙐𝘽𝙇𝙄𝙎𝙃𝙀𝘿
+» ${yt_play[0].ago}
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+ও 𝘿𝙐𝙍𝘼𝘾𝙄𝙊𝙉 | 𝘿𝙐𝙍𝘼𝙏𝙄𝙊𝙉
+» ${secondString(yt_play[0].duration.seconds)}
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+ও 𝙑𝙄𝙎𝙏𝘼𝙎 | 𝙑𝙄𝙀𝙒𝙎
+» ${MilesNumber(yt_play[0].views)}
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+ও 𝙐𝙍𝙇
+» ${yt_play[0].url}
+﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
+ও 𝙀𝙉𝙑𝙄𝘼𝘿𝙊 ${additionalText}, 𝘼𝙂𝙐𝘼𝙍𝘿𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊
+
+*〔 𝗗𝗶𝗮𝘇 𝗕𝗼𝘁🥷🏻 〕`  
 await conn.sendMessage(m.chat, {
 text: captionvid,
 contextInfo: {
 externalAdReply: {
-title: `𝐄𝐧 𝐮𝐧 𝐦𝐨𝐦𝐞𝐧𝐭𝐨 𝐞𝐧𝐯𝐢𝐨 𝐬𝐮: ${additionalText}`,
-body: fantasy,
-thumbnailUrl: `${yt_play[0].url}`, 
+title: yt_play[0].title,
+body: packname,
+thumbnailUrl: yt_play[0].thumbnail, 
 mediaType: 1,
-showAdAttribution: false,
+showAdAttribution: true,
 renderLargerThumbnail: true
 }}} , { quoted: m })
 if (command == 'play') {	
@@ -140,7 +56,7 @@ await conn.sendMessage(m.chat, { audio: { url: dl_url }, mimetype: 'audio/mpeg',
 externalAdReply: {
 title: ttl,
 body: "",
-thumbnailUrl: `${yt_play[0].url}`, 
+thumbnailUrl: yt_play[0].thumbnail, 
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
@@ -151,9 +67,9 @@ const dataRE = await fetch(`https://api.akuari.my.id/downloader/youtube?link=${y
 const dataRET = await dataRE.json()
 await conn.sendMessage(m.chat, { audio: { url: dataRET.mp3[1].url }, mimetype: 'audio/mpeg', contextInfo: {
 externalAdReply: {
-title: `𝐄𝐧 𝐮𝐧 𝐦𝐨𝐦𝐞𝐧𝐭𝐨 𝐞𝐧𝐯𝐢𝐨 𝐬𝐮: ${additionalText}`,
+title: yt_play[0].title,
 body: "",
-thumbnailUrl: `${yt_play[0].url}`, 
+thumbnailUrl: yt_play[0].thumbnail, 
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
@@ -213,7 +129,7 @@ const yt = await youtubedl(v).catch(async _ => await youtubedlv2(v))
 const dl_url = await yt.video[q].download()
 const ttl = await yt.title
 const size = await yt.video[q].fileSizeH
-await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `╔╦══• •✠•${wm}•✠ • •══╦╗\n • ${mid.smsYT1}\n┃ ${ttl}\n╚╩══• •✠•${fantasy}•✠ • •══╩╝`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
+await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `╭━❰  ${wm}  ❱━⬣\n┃ 💜 𝙏𝙄𝙏𝙐𝙇𝙊 | 𝙏𝙄𝙏𝙇𝙀\n┃ ${ttl}\n╰━━━━━❰ *𓃠 ${vs}* ❱━━━━⬣`, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
 } catch {   
 try {  
 let mediaa = await ytMp4(yt_play[0].url)
@@ -226,14 +142,14 @@ let n = lolh.result.title || 'error'
 let n2 = lolh.result.link
 let n3 = lolh.result.size
 let n4 = lolh.result.thumbnail
-await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `╔╦══• •✠•${wm}•✠ • •══╦╗\n┃⏤͟͟͞͞★꙲⃝͟🌻 ${mid.smsYT1}\n┃ ${n}\n╚╩══• •✠•${fantasy}•✠ • •══╩╝`, thumbnail: await fetch(n4) }, { quoted: m })
+await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `╭━❰  ${wm}  ❱━⬣\n┃ 💜 𝙏𝙄𝙏𝙐𝙇𝙊 | 𝙏𝙄𝙏𝙇𝙀\n┃ ${n}\n╰━━━━━❰ *𓃠 ${vs}* ❱━━━━⬣`, thumbnail: await fetch(n4) }, { quoted: m })
 } catch {
 }}}    
 }} catch {
 handler.limit = 0
 }}
 handler.command = ['play', 'play2']
-handler.exp = 500
+handler.exp = 0
 handler.limit = 1
 export default handler
 
